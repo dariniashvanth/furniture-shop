@@ -1,0 +1,255 @@
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.navbar-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent; 
+  z-index: 10; 
+}
+
+
+.hover-effect:hover {
+  color: #ffc107; 
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+
+.page-container {
+  width: 100%;
+  padding: 20px; 
+}
+
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+.btn {
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+
+.list-group-item {
+  font-size: 1.1rem;
+}
+
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .card-img-top {
+    height: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .card-img-top {
+    height: 120px;
+  }
+}
+
+.collection-card {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.collection-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+
+.collection-overlay {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.collection-overlay i {
+  background: rgba(255, 255, 255, 0.386);
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.collection-overlay i:hover {
+  background: #ffc107;
+  transform: scale(1.1);
+}
+
+
+.btn-continue {
+  background-color: #0d3b66;
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-continue:hover {
+  background-color: #0b3254; 
+  color: white;
+}
+
+
+
+
+
+.container-top-space {
+  margin-top: 0px; 
+}
+
+
+.products-hero {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+
+.product-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+
+.wishlist-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #ffffff04;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.wishlist-icon:hover {
+  color: red;
+}
+
+
+.add-cart-btn {
+  background: #000;
+  color: white;
+  border-radius: 50%;
+}
+
+.add-cart-btn:hover {
+  background: #333;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #bbbbbb;
+}
+
+.social-icon {
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #bbbbbb;
+}
+
